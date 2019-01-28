@@ -1,0 +1,59 @@
+<head>
+<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="stylesheets/login.css" rel="stylesheet" id="bootstrap-css">
+<script src="js/login.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<link href="css/fonts.css" rel="stylesheet"  crossorigin="anonymous">
+</head>
+<body class="margin">
+<% include headers.ejs %>
+<section id="home-section" class="line ">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3 mx-auto col-sm-1">
+                <div id="first">
+                    <div class="myform form text-center ">
+
+                        <form action="/users" method="post" name="login">
+                            <div class="form-group ">
+                                <br>
+                                <label for="exampleInputEmail1" >Email address</label>
+                                <br>
+                                <br>    <input type="username" name="uname"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Username">
+                            </div>
+                            <div class="form-group">
+                                <br>
+                                <label for="exampleInputEmail1">Password</label>
+                                <br>
+                                <br>  <input type="password" name="pwd" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                            </div>
+                            <br>
+                            <div class="col-md-12 ">
+                                <button type="submit"  class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+                            </div>
+
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+</body>
+
+
+
+
+<!-- MAIN SECTION -->
+
+
+
+

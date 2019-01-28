@@ -1,0 +1,59 @@
+<link href="stylesheets/login.css" rel="stylesheet" id="bootstrap-css">
+<script src="js/login.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<link href="css/fonts.css" rel="stylesheet" crossorigin="anonymous">
+<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="js/responsee.js"></script>
+<link href="css/font-awesome.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<body class="margin">
+<% include headers.ejs %>
+<% include acopt.ejs %>
+<section id="home-section" class="line">
+    <div class="container">
+        <form action="/users/createorder" method="post" name="login">
+        <table id="myTable" class="table order-list">
+            <thead>
+            <tr>
+                <td>Sr No</td>
+                <td>Design</td>
+                <td>Color</td>
+                <td>Delete</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="col-sm-2">
+                    <input type="text" name="Sr" class="form-control"/>
+                </td>
+                <td class="col-md-1" >
+                    <input type="mail" name="design" class="form-control"/>
+                </td>
+                <td class="col-md-1">
+                    <input type="text" name="color" class="form-control"/>
+                </td>
+                <td class="col-md-1"><a class="deleteRow"></a>
+                <input id="rowtotal" name="rowtotal" hidden></input>
+                </td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr >
+                <td colspan="5" style="text-align:center;" >
+                    <h3 clss="center"> <i class="fas fa-plus-circle" id="addrow" value="Add Row"></i></h3>
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            </tfoot>
+        </table>
+        <div class="col-md-12 ">
+            <button type="submit"  class=" btn btn-block mybtn btn-primary tx-tfm">Submit</button>
+        </div>
+
+        </form>
+
+    </div>
+</section>
+</body>

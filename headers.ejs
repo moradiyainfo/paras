@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="css/template-style.css">
+
+
+</head>
+<body class="header">
+<header>
+    <div class="line">
+        <nav>
+            <div class="top-nav">
+                <p class="nav-text"></p>
+                <a class="logo" href="/">
+                    Paras <span>Impex</span>
+                </a>
+                <h1>Fashion Of India</h1>
+                <h1>&nbsp;&nbsp;&nbsp;&nbsp;Welcome <%= mode %></h1>
+                <ul class="top-ul right">
+                    <li>
+                        <span lang="en-in">
+                        <a href="/">Home</a></span>
+                    </li>
+                    <li>
+                        <a href="photos">Photos</a>
+                    </li>
+
+                    <li class="dropdown">
+
+                        <% if( mode == 'LoggedIn' ){ %>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" ari a-expanded="true">My Account</a>
+                            <ul class="dropdown-menu top-ul right">
+
+
+                                <li><a href="userprof"><Profile>Profile</Profile></a></li>
+                                <li><a href="users/order">Order Entry</a></li>
+                                <li><a href="users/logout">Log Out</a></li>
+                            </ul>
+
+                        <% }else { %>
+                            <a href="users/login">Login</a>
+                        <% } %>
+
+                    </li>
+                    <li>
+                        <a href="contact">Contactus</a>
+                    </li>
+                    <div class="social right">
+                        <a target="_blank" href="https://www.facebook.com/Parasimpex">
+                            <i class="icon-facebook_circle icon2x"></i>
+                        </a>
+                        <a target="_blank" href="https://twitter.com/Parasimpex">
+                            <i class="icon-twitter_circle icon2x"></i>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+</body>
+</html>
